@@ -24,7 +24,7 @@ from sklearn.impute import SimpleImputer
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
 
-matplotlib.use('Agg')
+#matplotlib.use('Agg')
 
 def go(args):
 
