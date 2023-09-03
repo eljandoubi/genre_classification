@@ -5,12 +5,14 @@ import logging
 import pandas as pd
 import wandb
 import mlflow.sklearn
+import matplotlib
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_auc_score, plot_confusion_matrix
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
 
+matplotlib.use('Agg')
 
 def go(args):
 
