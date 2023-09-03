@@ -16,6 +16,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import roc_auc_score, plot_confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OrdinalEncoder, StandardScaler, FunctionTransformer
+import matplotlib
 import matplotlib.pyplot as plt
 import wandb
 from sklearn.pipeline import Pipeline, make_pipeline
@@ -24,7 +25,7 @@ from sklearn.impute import SimpleImputer
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
 
-#matplotlib.use('Agg')
+matplotlib.use('Agg')
 
 def go(args):
 
