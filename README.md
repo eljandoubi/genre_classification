@@ -1,5 +1,5 @@
 # genre_classification
-
+The primary objective of this project is to develop a machine learning pipeline capable of accurately classifying the genre of songs.
 
 ## Table of contents
 
@@ -91,7 +91,7 @@ random_forest_pipeline -> random_forest -> n_estimators to 10:
   -P hydra_options="random_forest_pipeline.random_forest.n_estimators=10"
 ```
 
-In order to realize parallel hyperparmeter optimization, you execute:
+To enable parallel hyperparameter optimization, you should execute the following:
 
 ```bash
 > mlflow run . \
